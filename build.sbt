@@ -13,11 +13,11 @@ lazy val root = project.in(file(".")).
 lazy val app = crossProject.in(file(".")).
   settings(
     name := "app",
-    version := "0.1-SNAPSHOT",
-    scalaVersion := "2.11.8",
+    version := "0.2-SNAPSHOT",
+    scalaVersion := "2.12.1",
     libraryDependencies ++= Seq(
       "com.lihaoyi" %%% "scalatags" % "0.6.2",
-      "com.lihaoyi" %%% "upickle" % "0.4.3",
+      "com.lihaoyi" %%% "upickle" % "0.4.4",
       "com.lihaoyi" %%% "autowire" % "0.2.6"
     ),
     scalacOptions ++= Seq("-feature")
@@ -29,8 +29,8 @@ lazy val app = crossProject.in(file(".")).
   ).
   jvmSettings(
     libraryDependencies ++= Seq(
-      "de.heikoseeberger" %% "akka-http-json4s" % "1.10.1",
-      "com.typesafe.akka" % "akka-slf4j_2.11" % "2.4.11",
+      "de.heikoseeberger" %% "akka-http-json4s" % "1.11.0",
+      "com.typesafe.akka" % "akka-slf4j_2.12" % "2.4.14",
       "ch.qos.logback" % "logback-classic" % "1.1.7",
       "org.webjars" % "materializecss" % "0.97.7"
     ),

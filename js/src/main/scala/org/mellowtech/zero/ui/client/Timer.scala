@@ -21,7 +21,7 @@ object Timer extends JSApp with ReactEventAliases{
           ^.className := "row",
           <.embed(
             ^.className := "col s12",
-            ^.src := "http://localhost:9000/counter/" + counter
+            ^.src := "http://localhost:9020/counters/" + counter
           )
         )
       )
